@@ -13,6 +13,11 @@
     width: 7rem;
 }
 
+.roundimage{
+    animation: pulse 2s infinite;
+    
+}
+
 .hdr{
     background-size: cover;
     background-repeat: repeat;
@@ -71,7 +76,7 @@ display: none;
         display: none;
     }
     
-    @media (max-width:500px){
+    @media (max-width:670px){
         .btndiv{
             display: flex;
         }
@@ -88,6 +93,18 @@ display: none;
       margin-left: 0%;
     }
   }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
 
 :root{
         --main:rgb(76, 186, 255);
@@ -252,6 +269,20 @@ background: linear-gradient(0deg, rgba(97,255,91,1) 0%, rgba(122,254,255,1) 33%,
   .mySlides{
     animation: fade 1s;
   }
+
+  .seemoretitle{
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .next{
+    margin-left: 10px;
+  }
+
+  .prev{
+    margin-right: 10px;
+  }
+
+
 
 
 
