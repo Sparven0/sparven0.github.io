@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/c46614fcf6.js" crossorigin="anonymous"></script>
+    <link href="./output.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-green-200">
+
+  <!--inline CSS för denna sida :D-->
+<div class="flex justify-center">
+    <h1 class="text-4xl mt-4">What we offer</h1>
+</div>
+
+
+<div class="wrapper">
+    <div class="container">
+        <div class="w-full h-96 bg-green-200 mySlides">
+            <h2 class="text-5xl text-center mt-4">In-web calculation</h2>
+            <p class="m-4">Need fast and easy trignometry calculations? No problem, under calculate we do most of the work for you. Just choose formula, put in your values and press calculate.</p>
+            
+        </div>
+    
+        <div class="w-full h-96 bg-green-200 mySlides">
+            <h2 class="text-5xl text-center mt-4">Formulas</h2>
+            <p class="m-4">Find all your trigonometry formulas in one place.</p>
+            <p class="m-4">Under sheets, you can browse between formula and definition sheets for all your needs. </p>
+            
+        </div>
+    
+        <div class="w-full h-96 bg-green-200 mySlides">
+            <h2 class="text-5xl text-center mt-4">In-web calculation</h2>
+            <p class="m-4">Need fast and easy trignometry calculations? No problem, under calculate we do most of the work for you. Just choose formula, put in your values and press calculate.</p>
+            
+        </div>
+        
+        <div class="w-full h-96 bg-green-200 mySlides">
+            <h2 class="text-5xl text-center mt-4">In-web calculation</h2>
+            <p class="m-4">Need fast and easy trignometry calculations? No problem, under calculate we do most of the work for you. Just choose formula, put in your values and press calculate.</p>
+            
+        </div>
+    
+      
+    
+        <div class="text-center">
+      <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-circle-left text-3xl"></i></a>
+      <a class="next" onclick="plusSlides(+1)"><i class="fa-solid fa-circle-right text-3xl"></i></a>
+        </div>
+    
+</div>
+</div>
+
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("bs");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+        
+</body>
+
+</html>
