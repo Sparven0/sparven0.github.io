@@ -27,6 +27,9 @@
 display: none;
 }
 
+nav li:hover{
+    opacity:70%}
+
 @font-face {
   font-family: 'Lilita One'; 
   src: url('./LilitaOne-Regular.ttf'); 
