@@ -115,6 +115,10 @@ display: none;
         --main:rgb(76, 186, 255);
       }
 
+.seemore{
+    font-family:'Inter', sans-serif
+}
+
   /*------ CSS for 'index.html' ends here ------*/
 
 
