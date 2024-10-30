@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-slate-950 sheetsbody">
+    <div class="header bg-cyan-500 p-1 h-12 w-full flex text-white z-10 absolute">
+        <button class="w-20 bg-sky-900 rounded ml-10 menubtn">Sheets</button>
+        <button class="w-20 bg-sky-900 rounded ml-10"><a href="index.html">Home</a></button>
+        <button class="px-2 bg-sky-900 rounded ml-10"><a href="calculate.html">Calculate</a></button>
+
+    </div>
+    
+    <div class="sheetmenu mt-12 flex flex-row flex-wrap absolute ">
+        <div class="bg-slate-950 w-full h-12 flex justify-between">
+        <p class="text-white mt-3 ml-2 text-xl">Definition of Functions</p>
+        <input type="checkbox" name="dof" class=" w-5 h-5 mt-4 mr-12 border-none definitions">
+    </div>
+    <div class="inputdiv w-full h-14 bg-slate-950 flex justify-between">
+        <p class="text-white mt-3 ml-2 text-xl">Formulas and Identities</p>
+        <input type="checkbox" name="doe" class=" w-5 h-5 mt-4 mr-12 border-none formulas">
+    </div>
+   
+   
+
+
+    </div>
+
+
+<div class="sheetdivfunctions">
+<img src="/Exa/assets/sheet2smallleft.jpg">
+</div>
+<div class="sheetdivformulas">
+    <img src="/Exa/assets/sheet2smallright.jpg" alt="">
+</div>
+
+
+<div class="flex h-full w-full justify-center ">
+<div class="sheetdiv flex-wrap">
+    <picture>
+        <source media="(min-width:900px)" srcset="/Exa/assets/sheet2.png">
+        <source media="(max-width:900px)" srcset="/Exa/assets/sheet2smallright.jpg">
+        <img src="/Exa/assets/IMG_0227.png" class="image">
+            </picture>
+            <picture>
+                <source media="(max-width:900px)" srcset="/Exa/assets/sheet2smallleft.jpg">
+        <img src="/Exa/assets/IMG_0227.png" class="image picturetwo">
+            </picture>
+</div>
+</div>
+
+<script>
+    const menuBtn =document.querySelector('.menubtn');
+    const menu =document.querySelector('.sheetmenu');
+    menuBtn.addEventListener('click', ()=>{
+        menu.classList.toggle('show')
+    })
+
+    let sheetfunctions = document.querySelector('.sheetdivfunctions');
+let sheetfunctionstwo = document.querySelector('.sheetdivformulas');
+let sheets = document.querySelector('.sheetdiv');
+let f = document.querySelector('input[name="dof"]');
+let e = document.querySelector('input[name="doe"]');
+
+const checkBoth = () => {
+  
+    sheetfunctions.classList.remove('show');
+    sheetfunctionstwo.classList.remove('show');
+    sheets.classList.remove('show');
+
+    
+    if (f.checked && e.checked) {
+        sheets.classList.add('show'); 
+    } else if (f.checked) {
+        sheetfunctions.classList.add('show'); 
+    } else if (e.checked) {
+        sheetfunctionstwo.classList.add('show'); 
+    }
+}
+
+f.addEventListener('change', checkBoth);
+e.addEventListener('change', checkBoth);
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

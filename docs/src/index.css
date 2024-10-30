@@ -1,0 +1,294 @@
+
+/*------ CSS for 'index.html' starts here ------*/
+
+.logo{
+    animation: slide-right 0.5s;
+}
+
+.cards{
+    animation: slide-left 0.5s;
+}
+
+.formulaimage{
+    width: 7rem;
+}
+
+.roundimage{
+    animation: pulse 2s infinite;
+    
+}
+
+.hdr{
+    background-size: cover;
+    background-repeat: repeat;
+    }
+
+.mobilenav{
+display: none;
+}
+
+@font-face {
+  font-family: 'Lilita One'; 
+  src: url('/docs/assets/LilitaOne-Regular.ttf'); 
+}
+
+.simple, #name {
+  font-family: 'Lilita One', sans-serif; 
+}
+
+.xclass{
+    display: block;
+    background: rgb(11,0,193);
+  background: linear-gradient(0deg, rgba(11,0,193,1) 0%, rgba(131,26,255,1) 16%, rgba(255,69,199,1) 38%, rgba(245,48,163,1) 65%, rgba(249,189,255,1) 100%);
+    height: 100%;
+    animation: slide-right 0.5s;
+    position: absolute;
+    width: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    }
+
+    .navbar{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+    }
+    
+    .hide{
+        display: none;
+    }
+
+    .startbtn{
+        border-style: solid;
+        border-color: aquamarine;
+        border-width: 5px;
+        color: rgb(98, 199, 165);
+    
+    }
+
+    .name{
+        color:  rgb(98, 199, 165);
+    }
+    
+    @media(max-width:1250px) {
+        .gridmedia{
+            grid-template-columns: auto auto;
+            gap: 2px;
+            margin-top: 0px;
+        }
+        
+    }
+
+    .btndiv{
+        display: none;
+    }
+    
+    @media (max-width:670px){
+        .btndiv{
+            display: flex;
+        }
+        .gridmedia{
+            display: none;
+        }
+    }
+
+@keyframes slide-right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+:root{
+        --main:rgb(76, 186, 255);
+      }
+
+  /*------ CSS for 'index.html' ends here ------*/
+
+
+
+  /*------ CSS for 'sheets.html' starts here ------*/
+
+.sheetsbody{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes slide-down{
+from{margin-top:-100px}
+to{margin-top:48px}
+}
+  
+
+@media (min-width:1000px)
+{
+    .sheetdivformulas.show{
+        width: 37%;
+    }
+    .sheetdivfunctions.show{
+        width: 37%;
+    }
+    
+}
+
+.image{
+    width: 2000px;
+}
+
+.sheetmenu{
+    display: none;
+}
+
+.sheetdiv{
+    display: none;
+}
+
+.sheetdiv.show{
+    display: flex;
+    width: 90%;
+margin-top: 30px;
+position:absolute;
+z-index: -10;
+
+
+}
+
+.sheetdivfunctions{
+    display: none;
+    
+}
+
+.sheetdivfunctions.show{
+    display: block;
+   
+   
+}
+
+.sheetdivformulas{
+    display: none;
+}
+
+.sheetdivformulas.show{
+    display: block;
+    
+}
+
+.sheetmenu.show{
+    animation: slide-down 500ms;
+    display: flex;
+    margin-left: 2px;
+    position: absolute;
+    border-style: solid;
+    border-top-style:none ;
+    border-width: 2px;
+    border-color: rgb(12 74 110);
+}
+
+@media (min-width:900px){
+    .picturetwo{
+        display: none;
+    }
+}
+
+/*------ CSS for 'sheets.html' ends here ------*/
+
+
+/*------ CSS for 'calculate.html' starts here ------*/
+
+
+@keyframes slide-right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+
+
+.navi{
+    display: none;
+   
+}
+
+.navi.show{
+display: flex;
+background-color: aqua;
+height: 300px;
+width: 300px;
+animation: slide-right 1.5s;
+
+}
+.title{
+  font-family: 'Lilita One', sans-serif;
+}
+
+.navbar{font-family: 'Courier New', Courier, monospace;}
+
+/*------ CSS for 'calculate.html' ends here ------*/
+
+
+/*------CSS for 'login.html' starts here ------*/
+
+.loginbg{
+    height: 100vh;
+    background: rgb(97,255,91);
+background: linear-gradient(0deg, rgba(97,255,91,1) 0%, rgba(122,254,255,1) 33%, rgba(51,172,250,1) 100%);
+}
+
+.loginbox{
+    height: 550px;
+    width: 450px;
+}
+
+/*------CSS for 'login.html' ends here ------*/
+
+/*------ CSS for 'seemore.html' starts here ------*/
+
+
+@keyframes fade {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+  }
+
+  .mySlides{
+    animation: fade 1s;
+  }
+
+  .seemoretitle{
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .next{
+    margin-left: 10px;
+  }
+
+  .prev{
+    margin-right: 10px;
+  }
+
+
+
+
+
+

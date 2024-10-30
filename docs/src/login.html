@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="index.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  class="loginbg">
+    <header>
+        <div class="title text-center inline" >
+            <button class="dropbtn sm:hidden mx-auto  mb-4 p-1" id="togglebtn" onclick="navMob()"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+            <nav class="navbar w-screen hidden sm:block text-black">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+                <ul class="flex ">
+                    <li class="mr-6"><a href="index.html">Home</a></li>
+                    <li class="mr-6"><a href="sheets.html">Sheets</a></li>
+                    <li class="mr-6"><a href="calculate.html">Calculate</a></li>
+                   
+                </ul>
+            </div>
+             </nav>
+        </div>
+    </header>
+
+        <div class="wrapper m-10 justify-center flex">
+        <div class="grid text-center justify-center bg-slate-100 mt-40 p-2 rounded loginbox mx-5">
+            <h1 class="text-3xl mt-10">Already have an account?</h1>
+        <p class="mt-5">Log in to our user portal to experience more of what you mathematically love</p>
+           <div class="w-96 flex flex-wrap text-center mx-auto">
+<form action="#somePHP" class="mt-1">
+    <input type='text' placeholder="Email" id="input" class="bg-slate-300 rounded p-1"></input>
+    <input type='text' placeholder="Password" id="inputtwo" class="bg-slate-300 rounded p-1" ></input>
+    <button type='submit' class="bg-green-200 p-1 mt-5 w-56 rounded hover:bg-green-300" onClick='getValue()'>Login</button>
+</form>
+<p class="w-full p-1 mt-5">Note: This was made with Reqres.in dummy API. The login credentials are:</p>
+<p class="w-full p-1">Email: eve.holt@reqres.in</p>
+<p class="w-full p-1">Password: cityslicka</p>
+<p style="color:red">status 204 för lösenord, inte tid att felsöka</p>
+</div>
+
+        </div>
+    </div>
+   
+
+
+
+   
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script>
+      function getValue(){
+    let inputone = document.getElementById('input').value;
+    let inputtwo = document.getElementById('inputtwo').value;
+  
+    axios.post('https://reqres.in/api/login',{
+        email: inputone,
+        password: inputtwo
+    }).then(response => {
+        console.log(response)      //får status 200 för mail och 204 för lösen, hinner ej felsöka//
+        alert ('success')
+    })
+    .catch(error =>{
+        console.error('ERROR')
+        alert ('wrong username or password')
+    })
+  }
+    </script>
+</body>
+</html>

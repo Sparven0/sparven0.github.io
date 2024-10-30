@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/c46614fcf6.js" crossorigin="anonymous"></script>
+    <link href="./output.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-green-200">
+
+<div class="flex justify-center">
+    <h1 class="text-4xl mt-4 seemoretitle">What we offer</h1>
+</div>
+
+
+<div class="wrapper">
+    <div class="container">
+        <div class="w-full h-96 bg-green-200 mySlides">
+            <h2 class="text-5xl text-center mt-4">In-web calculation</h2>
+            <p class="m-4">Need fast and easy trignometry calculations? No problem, under calculate we do most of the work for you. Just choose formula, put in your values and press calculate.</p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fpng-vector%2F20221024%2Fourmid%2Fpngtree-accounting-black-sign-calculate-vector-png-image_34393652.png&f=1&nofb=1&ipt=2f451d7be578e6f9c28e25eccfd36d1a2db31a01811c3912a9801715d817c3e7&ipo=images" class="w-28 mb-10 mt-2 mx-auto roundimage" alt="calcpicture">
+        <div class="linkbox text-center">
+          <button class="bg-fuchsia-300 p-2 rounded-full active:opacity-70 text-white text-xl"><a href="calculate.html">Take me there</a></button>
+        </div>
+          </div>
+    
+        <div class="w-full h-96 bg-green-200 mySlides">
+            <h2 class="text-5xl text-center mt-4">Formulas</h2>
+            <p class="m-4">Find all your trigonometry formulas in one place.</p>
+            <p class="m-4">Under sheets, you can browse between formula and definition sheets for all your needs. </p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetdrawings.com%2Ffree-icon%2Fmath-icon-png-64.png&f=1&nofb=1&ipt=d4b4706ac2db8719b09fdc65a77590209dae7dbc68659115dac023b524c43833&ipo=images" class="formulaimage mt-9 mx-auto roundimage" alt="">
+        <div class="linkbox text-center">
+          <button class=" bg-yellow-500 mt-10 p-2 rounded-full active:opacity-70 text-white text-xl"><a href="sheets.html">Take me there</a></button>
+        </div>
+          </div>
+    
+        <div class="w-full h-96 bg-green-200 mySlides">
+            <h2 class="text-5xl text-center mt-4">Full access user portal</h2>
+            <p class="m-4">Gain all the knowledge you need through our user portal. Log in or sign up now.</p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fportal.calmet.com%2F_nuxt%2Fimg%2F5334509.png&f=1&nofb=1&ipt=bd017ae74441dc3c4160b61569c68de5e015531dedf242db391636e30c8682c6&ipo=images" class="w-28 mt-7 mx-auto roundimage" alt="">
+            <div class="linkbox text-center">
+              <button class=" bg-cyan-500 mt-10 p-2 rounded-full active:opacity-70 text-white text-xl"><a href="login.html">Take me there</a></button>
+            </div>
+          </div>
+        
+        <div class="w-full h-96 bg-green-200 mySlides">
+            <h2 class="text-5xl text-center mt-4">Our Partners</h2>
+            <p class="m-4">Our partnership with KiwiCo enables our users to not only utilize our offer, but also dive into more learning with KiwiCo's wide range of science classes.</p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-BUEMG9wwb3A%2FXANsNpXxE7I%2FAAAAAAAAC1A%2FIXH5QuRSJssbOd5TMHFp9ikGkQsccOwpQCLcBGAs%2Fs1600%2FKiwiCo.png&f=1&nofb=1&ipt=309088d0ce8681da305355064ab5ed3121608bcd5587dab9cce3a7c727b12a0f&ipo=images" alt="kiwico" class="w-40 mx-auto mt-5 roundimage ">
+            <div class="linkbox text-center">
+              <button class=" bg-lime-600 opacity- mt-10 p-2 rounded-full active:opacity-70 text-white text-xl"><a href="login.html">Take me there</a></button>
+            </div>
+          </div>
+    
+      
+    
+        <div class="text-center mt-10">
+      <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-circle-left text-5xl"></i></a>
+      <a class="next" onclick="plusSlides(+1)"><i class="fa-solid fa-circle-right text-5xl"></i></a>
+        </div>
+    
+</div>
+</div>
+
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+    
+      slides[slideIndex-1].style.display = "block";
+    
+    }
+    </script>
+        
+</body>
+
+</html>
