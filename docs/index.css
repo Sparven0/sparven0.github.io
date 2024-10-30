@@ -27,7 +27,7 @@
 display: none;
 }
 
-nav li:hover{
+nav li a:hover{
     opacity:70%}
 
 @font-face {
