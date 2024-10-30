@@ -29,7 +29,7 @@ display: none;
 
 @font-face {
   font-family: 'Lilita One'; 
-  src: url('/LilitaOne-Regular.ttf'); 
+  src: url('/docs/LilitaOne-Regular.ttf'); 
 }
 
 .simple, #name {
